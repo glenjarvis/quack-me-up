@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "QuackMeUp",
+  "version": "1.0",
+  "description": "The best ducks in the world",
+  "action": {},
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["./main.js"]
+    }
+  ]
+}
