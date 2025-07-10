@@ -3,11 +3,19 @@
   "name": "QuackMeUp",
   "version": "1.0",
   "description": "The best ducks in the world",
-  "action": {},
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["./main.js"]
+      "matches": ["<all_urls>"],
+      "js": ["main.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["duckPicture.jpg", "quack.mp3"],
+      "matches": ["<all_urls>"]
     }
   ]
 }
